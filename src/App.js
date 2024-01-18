@@ -1,24 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Interior from './components/interior'
+import Patio from './components/patio'
+import PrimerPiso  from './components/primerPiso';
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Switch>
+        <Route exact path='/' component={Interior}/>
+        <Route path='/patio' component={Patio}/>
+        <Route path='/primerpiso' component={PrimerPiso}/>
+      </Switch>
     </div>
+    </BrowserRouter>
   );
 }
 

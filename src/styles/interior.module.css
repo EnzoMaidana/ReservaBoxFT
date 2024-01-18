@@ -1,0 +1,65 @@
+.buttonContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50;
+    margin-bottom: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+  }
+
+  .buttonGroup {
+    grid-column: span 7;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 10px;
+    background-color: #f0f0f0;
+    color: #000000;
+    margin-bottom: 0.5px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid #000000;
+  }
+
+  .subtitle {
+    font-style: helvetica;
+    font-size: 30px;
+    background-color: #5c5b5b;
+    color: #ffffff;
+    padding: 4px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 40px;
+    border: 1px solid #333;
+  }
+
+  .separator {
+    height: 10px;
+    background-color: transparent;
+    border: none;
+  }
+
+  .numberButton {
+    position: relative;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    font-size: 36px;
+    cursor: pointer;
+    background-color: #333;
+    color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 3px solid #f0f0f0;
+    transition: background-color 0.3s ease;
+  }
+
+  .numberButton.black {
+    background-color: #f0f0f0;
+    color: #333;
+  }
